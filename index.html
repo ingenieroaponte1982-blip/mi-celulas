@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Células de Jóvenes Ganemos1+</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* Fondo con gradiente más audaz */
+            background: linear-gradient(135deg, #FF6B6B, #FFCD6E, #4ECDC4, #45B7D1);
+            background-size: 400% 400%;
+            animation: gradient-animation 15s ease infinite;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .text-glow {
+            text-shadow: 0 0 10px rgba(255,255,255,0.8), 0 0 20px rgba(255,255,255,0.6), 0 0 30px rgba(255,255,255,0.4);
+        }
+
+        .card-effect {
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+            transform: translateY(0);
+            transition: all 0.3s ease;
+        }
+        .card-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    
+    <!-- Hero Section -->
+    <main class="flex-grow flex items-center justify-center py-12 px-4">
+        <div class="bg-black bg-opacity-75 p-8 md:p-16 rounded-[40px] shadow-2xl max-w-4xl w-full mx-auto backdrop-blur-md border-4 border-white transform rotate-3 scale-95 transition-transform duration-500 hover:rotate-0 hover:scale-100">
+            
+            <h1 class="text-5xl md:text-7xl font-black text-center text-yellow-300 text-glow tracking-wide">
+                ¡Esto Es Para Ti!
+            </h1>
+            <p class="text-2xl md:text-3xl font-extrabold mt-4 text-center text-teal-300 text-glow">
+                Presentamos: Un Nuevo Recurso
+            </p>
+            
+            <div class="mt-12">
+                <div class="bg-white bg-opacity-10 rounded-[30px] p-8 card-effect">
+                    <h2 class="text-4xl md:text-5xl font-black text-center leading-tight">
+                        <span class="block text-red-400">Células de Jóvenes</span>
+                        <span class="block text-yellow-300 text-glow">'GANEMOS 1+'</span>
+                    </h2>
+                    
+                    <p class="text-lg md:text-xl font-medium italic mt-6 text-center text-gray-200">
+                        Diseñado para impulsar tu fe y multiplicar el impacto. ¡Prepárate para crecer!
+                    </p>
+                    
+                    <!-- Placeholder para la fecha del evento -->
+                    <p class="text-2xl md:text-3xl font-bold mt-8 text-center text-white">
+                        Fecha: ¡22 de septiembre 2025!
+                    </p>
+                    
+                    <!-- Placeholder para la ubicación del evento -->
+                    <p class="text-xl md:text-2xl text-center mt-2 text-gray-300">
+                        Lugar: ¡Asamblea de Dios Manantial de Bendiciones en el Desierto!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="mt-12 text-center">
+                <a href="#" class="inline-block bg-pink-500 hover:bg-pink-600 text-white font-black py-4 px-10 rounded-full shadow-lg transform transition-transform hover:scale-105 duration-300 text-lg md:text-xl">
+                    Sé Parte del Movimiento
+                </a>
+            </div>
+            
+            <!-- Social Media Icons (placeholders) -->
+            <div class="mt-8 flex justify-center space-x-8 opacity-90">
+                <a href="#" class="text-white hover:text-yellow-300 transition-colors duration-300">
+                    <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 5.084 3.49 9.39 8.204 10.747.6.11.82-.26.82-.577v-2.007c-3.376.732-4.085-1.628-4.085-1.628-.553-1.403-1.349-1.776-1.349-1.776-1.103-.75.083-.734.083-.734 1.22.086 1.868 1.25 1.868 1.25 1.082 1.864 2.843 1.325 3.53.993.11-.775.424-1.325.775-1.628-2.693-.304-5.52-1.347-5.52-5.986 0-1.325.467-2.408 1.233-3.25-.12-.304-.533-1.53.11-3.197 0 0 1.002-.325 3.28 1.246 1.042-.29 2.155-.436 3.268-.436 1.113 0 2.226.146 3.268.436 2.278-1.571 3.28-1.246 3.28-1.246.643 1.667.23 2.893.11 3.197.766.842 1.233 1.925 1.233 3.25 0 4.652-2.828 5.679-5.52 5.986.43.37.817 1.096.817 2.21v3.313c0 .317.22.687.82.577C18.51 21.39 22 17.084 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                </a>
+                <a href="#" class="text-white hover:text-yellow-300 transition-colors duration-300">
+                    <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M18.784 3.733H5.216A3.483 3.483 0 001.733 7.216v9.568A3.483 3.483 0 005.216 20.284h13.568A3.483 3.483 0 0022.267 16.784V7.216A3.483 3.483 0 0018.784 3.733zm-6.784 12.352c-2.493 0-4.516-2.023-4.516-4.516s2.023-4.516 4.516-4.516c2.493 0 4.516 2.023 4.516 4.516s-2.023 4.516-4.516 4.516zm5.83-8.118a1.076 1.076 0 110-2.152 1.076 1.076 0 010 2.152z"/></svg>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 text-xs opacity-75">
+        &copy; 2025 Células de Jóvenes 'Ganemos 1+'. Todos los derechos reservados.
+    </footer>
+    
+</body>
+</html>
